@@ -9,6 +9,11 @@
           <div class="location">Northampton, UK</div>
           <div class="date">Monday 20 January 2023</div>
         </div>
+
+        <div class="weather-box">
+          <div class="temp">9*c</div>
+          <div class="weather">Rain</div>
+        </div>
       </div>
     </main>
   </div>
