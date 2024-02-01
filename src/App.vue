@@ -8,8 +8,12 @@
 
 
 export default {
-  name: 'App'
-
+  name: 'App',
+  data(){
+    return{
+      api_key:'5cf91bfff72d64c70fa6ccb0cf0ee978'
+    }
+  }
 }
 </script>
 
