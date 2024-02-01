@@ -4,6 +4,12 @@
       <div class="search-box">
         <input type="text" class="search-bar" placeholder="search..." />
       </div>
+      <div class="weather-wrap">
+        <div class="location-box">
+          <div class="location">Northampton, UK</div>
+          <div class="date">Monday 20 January 2023</div>
+        </div>
+      </div>
     </main>
   </div>
 </template>
