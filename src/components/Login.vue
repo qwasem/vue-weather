@@ -5,17 +5,18 @@ import {ref} from "vue";
     // const count = ref(0)
 const username = ref("")
 const password = ref("")
-
+const is_login = ref(false);
 const login = () => {
 
-  const query1 = "http://" + "www.alihaddadi.sadrazkh.ir" + ":" + 8001 + "/auth/jwt/create"
+  const query1 = "http://" + "www.alihaddadi.sadrazkh.ir" + ":" + '8001' + "/auth/jwt/create"
   axios
       .post(query1,
           {
             username: username.value,
             password: password.value
-          }).then((res) => {res == true;})
+          }).then((res) => {is_login.value = true})
 }
+
 
 </script>
 

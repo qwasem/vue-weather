@@ -23,6 +23,12 @@
       </div>
     </main>
   </div>
+  <div>
+    <login-component v-if="!isLoggedIn"/>
+    <div v-if="isLoggedIn">
+      <h2>Welcome, {{ username }}! </h2>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -34,7 +40,7 @@ export default {
   components:{
 
     'Login':Login,
-    
+
   },
   data(){
     return{
