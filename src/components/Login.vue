@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 import axios from "axios";
 import {ref} from "vue";
-import config from "../config"
 
     // const count = ref(0)
 const username = ref("")
@@ -9,17 +8,14 @@ const password = ref("")
 
 const login = () => {
 
-  const query1 = "http://" + config.apiServer + ":" + config.port + "/auth/jwt/create"
+  const query1 = "http://" + "www.alihaddadi.sadrazkh.ir" + ":" + 8001 + "/auth/jwt/create"
   axios
       .post(query1,
           {
             username: username.value,
             password: password.value
-          }).then((res) => {
-            res == true;
-          }
+          }).then((res) => {res == true;})
 }
-
 
 </script>
 
@@ -90,9 +86,6 @@ const login = () => {
         </div>
 
         <div class="text-sm">
-          <span class="font-medium text-indigo-600 hover:text-indigo-500" @click="$router.push('/remember_password');" style="cursor: pointer;">
-            Forgot your password?
-          </span>
         </div>
       </div>
 

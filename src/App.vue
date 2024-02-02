@@ -26,10 +26,16 @@
 </template>
 
 <script>
-
+  import Login from './Login.vue'
 
 export default {
   name: 'App',
+
+  components:{
+
+    'Login':Login,
+    
+  },
   data(){
     return{
       api_key:'5cf91bfff72d64c70fa6ccb0cf0ee978',
@@ -64,7 +70,9 @@ export default {
 
       return `${day} ${date} ${month} ${year}`;
     } 
-  }
+  },
+  
+
 }
 </script>
 
